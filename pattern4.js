@@ -1,4 +1,4 @@
-function Pattern3(n) {
+function Pattern4(n) {
     let row
    
     for (let i = 1; i <=n; i++) {
@@ -8,17 +8,18 @@ function Pattern3(n) {
             row+="  "
              
          }
-        for (let j = 1; j <= i; j++) {
+        for (let j = 1; j <= (2*i-1); j++) {
            row+="* "
             
         }
         console.log(row)
      }
 }
-Pattern3(5)
+Pattern4(6)
 
-//         * 
-//       * * 
-//     * * * 
-//   * * * * 
-// * * * * * 
+//           *  
+//         * * * 
+//       * * * * * 
+//     * * * * * * * 
+//   * * * * * * * * * 
+// * * * * * * * * * * * 
